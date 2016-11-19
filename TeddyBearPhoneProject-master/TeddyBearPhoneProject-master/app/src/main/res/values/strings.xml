@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+    <string name="app_name">SIP Demo</string>
+    <string name="contactAddress">곰인형과 통신을 위한 곰인형 번호</string>
+    <string name="talk">Talk</string>
+</resources>

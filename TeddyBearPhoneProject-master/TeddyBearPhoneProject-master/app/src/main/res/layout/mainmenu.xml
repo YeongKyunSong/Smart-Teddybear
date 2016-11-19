@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@color/bearcolor">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_gravity="right" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/bear"
+        android:background="@color/bearcolor"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="70dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp">
+
+        <Button
+            android:id="@+id/btn_call"
+            android:layout_height="80dp"
+            android:layout_weight=".5"
+            android:layout_width="0dip"
+            android:onClick="setWalkieTalkie"
+            android:text="전화"
+            android:padding="0dp"
+            android:background="@drawable/roundbox1"
+            android:textColor="#FFF"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:drawableLeft="@drawable/ico_phone"
+            android:paddingLeft="5dp" />
+
+        <Button
+            android:id="@+id/btn_gps"
+            android:layout_height="80dp"
+            android:layout_weight=".5"
+            android:layout_width="0dip"
+            android:text="GPS위치"
+            android:padding="0dp"
+            android:background="@drawable/roundbox2"
+            android:textColor="#FFF"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:drawableLeft="@drawable/ico_gps"
+            android:paddingLeft="5dp"
+            android:onClick="setMapView"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_qna"
+            android:layout_height="80dp"
+            android:layout_weight=".5"
+            android:layout_width="0dip"
+            android:text="도움말"
+            android:layout_gravity="bottom"
+            android:padding="0dp"
+            android:background="@drawable/roundbox3"
+            android:textColor="#FFF"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:drawableLeft="@drawable/ico_qna"
+            android:paddingLeft="5dp"
+            android:onClick="setTutoriView"/>
+
+        <Button
+        android:id="@+id/btn_exit"
+        android:layout_height="80dp"
+        android:layout_weight=".5"
+        android:layout_width="0dip"
+        android:text="종료"
+        android:onClick="setfinish"
+        android:layout_gravity="bottom"
+            android:background="@drawable/roundbox4"
+            android:textColor="#FFF"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:drawableLeft="@drawable/ico_exit"
+            android:paddingLeft="5dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
